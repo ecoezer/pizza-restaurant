@@ -1,8 +1,6 @@
-import ProductCard from "./ProductCard";
-import Image from "next/image";
-import pizza1p from "../public/img/pizza1p.jpeg";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import CategoriesCarousel from "./CategoriesCarousel";
+import PizzaCarousel from "./PizzaCarousel";
 
 const ProductList = () => {
   return (
@@ -14,46 +12,8 @@ const ProductList = () => {
         </p>
       </div>
 
-      <div className="flex justify-center ">
-        <div className="grid lg:grid-cols-3 gap-9  md:grid-cols-2 sm:grid-cols-1 ">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-        </div>
-      </div>
-      {/* <div className="flex justify-center my-2  ">
-<Image className=" h-auto w-900 max-w-l flex justify-center" src={pizza1p} alt="our Restaurant photo "  />
-<button className=" btn-us">About Us</button> 
-</div> */}
-      <div className="flex justify-center mt-10 ">
-        <div className="grid lg:grid-cols-3 gap-7 md:grid-cols-2 sm:grid-cols-1 ">
-          {/* <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard /> */}
-        </div>
-      </div>
+      <CategoriesCarousel />
+      <PizzaCarousel />
     </>
   );
 };
