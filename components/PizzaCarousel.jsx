@@ -26,26 +26,25 @@ function Test() {
     },
   };
   return (
-    <div className="flex justify-center ">
+    <div className="my-16">
       <Carousel
+        className="custom-carousel"
         responsive={responsive}
         swipeable={true}
-        draggable={false}
+        draggable={true}
         showDots={false}
         ssr={true} // set to true if server-side rendering is enabled
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={3000}
+        infinite={false}
+        autoPlay={false}
+        autoPlaySpeed={2000}
         keyBoardControl={true}
         customTransition="all .5s"
         transitionDuration={500}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
+        itemClass="carousel-item-padding-10-px"
       >
-        <ProductCard />
-        <ProductCard />
         <ProductCard />
         <ProductCard />
         <ProductCard />

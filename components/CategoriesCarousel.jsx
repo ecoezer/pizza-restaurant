@@ -5,18 +5,18 @@ const ProductCard = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 9,
-      slidesToSlide: 9,
+      items: 5,
+      slidesToSlide: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 9,
-      slidesToSlide: 9,
+      items: 5,
+      slidesToSlide: 5,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 9,
-      slidesToSlide: 9,
+      items: 5,
+      slidesToSlide: 5,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -32,8 +32,8 @@ const ProductCard = () => {
         draggable={true}
         showDots={false}
         ssr={true} // set to true if server-side rendering is enabled
-        infinite={false}
-        autoPlay={false}
+        infinite={true}
+        autoPlay={true}
         autoPlaySpeed={3000}
         keyBoardControl={true}
         customTransition="all .5s"
