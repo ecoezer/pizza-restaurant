@@ -26,7 +26,7 @@ function Test() {
     },
   };
   return (
-    <div className="my-16">
+    <div className="my-16  px-4">
       <Carousel
         className="custom-carousel"
         responsive={responsive}
@@ -34,8 +34,8 @@ function Test() {
         draggable={true}
         showDots={false}
         ssr={true} // set to true if server-side rendering is enabled
-        infinite={false}
-        autoPlay={false}
+        infinite={true}
+        autoPlay={true}
         autoPlaySpeed={2000}
         keyBoardControl={true}
         customTransition="all .5s"
@@ -43,7 +43,7 @@ function Test() {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-10-px"
+        itemClass="carousel-item-padding-10-px px-7"
       >
         <ProductCard />
         <ProductCard />
@@ -52,6 +52,11 @@ function Test() {
         <ProductCard />
         <ProductCard />
         <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        
       </Carousel>
     </div>
   );

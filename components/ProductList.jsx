@@ -6,7 +6,7 @@ const ProductList = () => {
   return (
     <>
       <div className="text-center mt-36 ">
-        <div className="mt-2 text-5xl">Best Pizza In Hildesheim</div>
+        <div className="mt-2 text-5xl main-title font-bold italic drop-shadow-lg shadow-red-600">Best Pizza In Hildesheim</div>
         <p className=" flex mx-auto justify-center mt-2 w-3/6 mb-2 text-xl">
           Enjoy and nurture your body with what you love and crave for
         </p>

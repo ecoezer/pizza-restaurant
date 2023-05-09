@@ -44,31 +44,31 @@ const ProductCard = () => {
         itemClass="carousel-item-padding-10-px"
       >
         <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
-          <p>Action</p>
+          <p>Italian Pizzas</p>
         </div>
         <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
-          <p>Burger</p>
+          <p>American Pizzas</p>
         </div>
         <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
-          <p>Salad</p>
+          <p>Turkish Pizzas</p>
         </div>
         <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
-          <p>Sushi</p>
+          <p>Salads</p>
+        </div> 
+        <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
+          <p>Sauces</p>
         </div>
         <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
-          <p>Chinese</p>
+          <p>Sweets</p>
         </div>
         <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
-          <p>Italian</p>
-        </div>
-        <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
-          <p>Indian</p>
-        </div>
-        <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
+          <p>Drinks</p>
+        </div> 
+        {/* <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
           <p>Mexican</p>
         </div>
         <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
-          <p>Greek</p>
+          <p></p>
         </div>
         <div className="hover:bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
           <p>Turkish</p>
@@ -77,8 +77,8 @@ const ProductCard = () => {
           <p>Pizza</p>
         </div>
         <div className="bg-slate-200 cursor-pointer py-1 mr-2 text-center text-black font-medium rounded-xl">
-          <p>More</p>
-        </div>
+          <p>More</p> */}
+        {/* </div> */}
       </Carousel>
     </div>
   );

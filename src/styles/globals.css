@@ -176,5 +176,12 @@ a {
 }
 
 .custom-carousel > * {
-  max-width: 150%;
+  max-width: 200%;
 }
+.main-title {
+  text-shadow: #fd1c03bc 1.5px 1.5px ;
+  /* font-family: playfair; */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:ital,wght@1,100&display=swap');
