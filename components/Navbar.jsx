@@ -20,7 +20,6 @@ const Navbar = () => {
               className="bg-white rounded-full w-14 h-14 py-3"
             />
           </div>
-
           <div>
             <div className="uppercase">Order Now</div>
             <div className="uppercase">123456 78</div>

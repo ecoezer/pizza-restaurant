@@ -1,28 +1,35 @@
 import Image from "next/image";
 
-const ProductCard = () => {
+const ProductCard = (
+{  key,
+  imageSrc,
+  title,
+  description,
+  price,
+}
+) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl card-effects ">
-      <figure>
-        <Image
-          src="/img/pepperoni.png"
-          alt="Shoes "
-          width={300}
-          height={200}
-          draggable={false}
-        />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">Pizza Salami</h2>
-        <p>
-          Knuspriger Boden, saftige Tomaten, würzige Salami: deine Pizza Salami
-        </p>
-        <div className="card-actions justify-end">
-          <p className="italic text-3xl ">12.99€</p>
-          <button className="btn btn-primary ">Add to cart</button>
-        </div>
-      </div>
+<div className="card w-72 h-96 bg-base-100 shadow-xl card-effects">
+  <figure>
+    <Image
+      src={imageSrc}
+      alt={title}
+      width={300}
+      height={200}
+      layout="responsive"
+      className="rounded-t-lg"
+    />
+  </figure>
+  <div className="card-body">
+    <h2 className="card-title">{title}</h2>
+    <p>{description}</p>
+    <div className="card-actions justify-end">
+      <p className="italic text-3xl">{price}</p>
+      <button className="btn btn-primary">Add to cart</button>
     </div>
+  </div>
+</div>
+
   );
 
   {
